@@ -1,9 +1,4 @@
-﻿
-
-using System;
-using NUnit.Framework;
-using System.Collections.Generic;
-using System.Linq;
+﻿using NUnit.Framework;
 using TestNinja.Fundamentals;
 
 namespace Test.UnitTest
@@ -14,7 +9,7 @@ namespace Test.UnitTest
 
         private TestNinja.Fundamentals.Math _math;
         [SetUp]
-        private void SetUp()
+        public void SetUp()
         {
             // burası Arrange görevini üstleniyor 
             _math = new TestNinja.Fundamentals.Math();

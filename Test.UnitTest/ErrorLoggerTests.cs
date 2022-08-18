@@ -23,8 +23,7 @@ namespace Test.UnitTest
         {
             var logger = new ErrorLogger();
 
-            
-            Assert.That(() => logger.Log(error), Throws.ArgumentException);
+            Assert.That(() => logger.Log(error), Throws.ArgumentNullException);
 
 
         }
