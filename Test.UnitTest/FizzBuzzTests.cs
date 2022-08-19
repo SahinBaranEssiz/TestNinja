@@ -9,13 +9,12 @@ using TestNinja.Fundamentals;
 
 namespace Test.UnitTest
 {
+    //bu test için arrange'e ihtiyacımız yok çünkü class static
     [TestFixture]
     public class FizzBuzzTests
     {
-        
-
         [Test]
-        public void FizzBuzz_WhenCalled_ReturnFizzBuzz()
+        public void FizzBuzz_WhenResultIsBy3and5_ReturnFizzBuzz()
         {            
             var result = FizzBuzz.GetOutput(15);
 
@@ -23,7 +22,7 @@ namespace Test.UnitTest
 
         }
         [Test]
-        public void FizzBuzz_WhenCalled_ReturnBuzz()
+        public void FizzBuzz_WhenResultIsBy5_ReturnBuzz()
         {            
             var result = FizzBuzz.GetOutput(5);
 
@@ -31,7 +30,7 @@ namespace Test.UnitTest
 
         }
         [Test]
-        public void FizzBuzz_WhenCalled_ReturnFizz()
+        public void FizzBuzz_WhenResultIsBy3_ReturnFizz()
         {            
             var result = FizzBuzz.GetOutput(3);
 
@@ -39,7 +38,7 @@ namespace Test.UnitTest
 
         }
         [Test]
-        public void FizzBuzz_WhenCalled_ReturnNumber()
+        public void FizzBuzz_WhenResultIsNotBy3And5_ReturnNumber()
         {
             var result = FizzBuzz.GetOutput(1);
 
@@ -53,8 +52,8 @@ namespace Test.UnitTest
         //[TestCase(3, "Fizz")]
         //public void FizzBuzz_WhenCalled_ReturnFizzBuzz(int number,   expectedResult)
         //{
-        //    //var fizzbuzz = new FizzBuzz();
-        //    var result = FizzBuzz.GetOutput(number);
+        //    
+        //    FizzBuzz.GetOutput(number);
 
         //    Assert.That(result, Does.Contain(expectedResult));
         //}
