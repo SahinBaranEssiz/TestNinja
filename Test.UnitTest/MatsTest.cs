@@ -60,10 +60,10 @@ namespace Test.UnitTest
             //üstteki 3 satır aşağıda ki ile aynı işlemi yapmakta
             Assert.That(result, Is.EquivalentTo(new[] {1, 3, 5}));
 
-                //3.yol sıralı sonuç için
+                //sıralı sonuç için
             //Assert.That(result, Is.Ordered);
 
-                //4. yol içindekiler tekrarlıyor mu diye kontrol ediyor
+                //içindekiler tekrarlıyor mu diye kontrol ediyor
             //Assert.That(result, Is.Unique);
         }
 
