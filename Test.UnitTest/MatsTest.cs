@@ -7,12 +7,12 @@ namespace Test.UnitTest
     public class MatsTest
     {
 
-        private TestNinja.Fundamentals.Math _math;
+        private Math _math;
         [SetUp]
         public void SetUp()
         {
             // burası Arrange görevini üstleniyor 
-            _math = new TestNinja.Fundamentals.Math();
+            _math = new Math();
         }
         [Test]
         public void Add_WhenCalled_ReturnTheSumOfArguments()
