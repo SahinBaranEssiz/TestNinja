@@ -63,15 +63,16 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomerControllerTests.cs" />
-    <Compile Include="DemeritPointsCalculatorTests.cs" />
-    <Compile Include="ErrorLoggerTests.cs" />
-    <Compile Include="FizzBuzzTests.cs" />
-    <Compile Include="HtmlFormatterTests.cs" />
-    <Compile Include="reservationTests.cs" />
+    <Compile Include="fundamentals\CustomerControllerTests.cs" />
+    <Compile Include="fundamentals\DemeritPointsCalculatorTests.cs" />
+    <Compile Include="fundamentals\ErrorLoggerTests.cs" />
+    <Compile Include="fundamentals\FizzBuzzTests.cs" />
+    <Compile Include="fundamentals\HtmlFormatterTests.cs" />
+    <Compile Include="fundamentals\reservationTests.cs" />
+    <Compile Include="mocking\FakeFileReader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="MatsTest.cs" />
-    <Compile Include="StackTests.cs" />
+    <Compile Include="fundamentals\MatsTest.cs" />
+    <Compile Include="fundamentals\StackTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />
