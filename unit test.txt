@@ -1,0 +1,82 @@
+isimlendirme
+
+Login --> LogintTests
+
+
+[MethodName]_[Scenario]_[ExpectedBehaviour]
+
+
+number of tests >= Number of execution paths
+
+
+Nunit Install
+
+Default project : (tests project)
+
+Install-Package NUnit -Version 3.8.1
+
+Install-Package NUnit3TestAdapter -Version 3.8.0
+
+
+[TestClass] yerine [TestFixture] | (ctrl + .) --> usingNUnit.Framework
+[TestMethod] yerine [Test]
+
+hepsi aynı 
+Assert.IsTrue(result); == Assert.That(result, Is.True); == Assert.That(result == True);
+
+liste gibi içeriklerin testi ColletcionAssert ile yapılmakta
+
+
+SetUp = eğerki aynı aynı obje bütün testlerde var ise bu ifadeyi kullanıyoruz
+
+private TestNinja.Fundamentals.Math _math;
+        [SetUp]
+        public void SetUp()
+        {
+            // burası Arrange görevini üstleniyor 
+            _math = new TestNinja.Fundamentals.Math();
+        }
+
+	[Test]
+        public void Add_WhenCalled_ReturnTheSumOfArguments()
+        {
+            // Arrange
+            //TestNinja.Fundamentals.Math math = new TestNinja.Fundamentals.Math();
+
+            // Act
+            int result = _math.Add(5,5);
+
+            // Assert
+            Assert.AreEqual(result,10);
+        }
+
+TearDown
+
+
+
+parameterized test: benzer testi sadece farklı değer verip 1 den fazla kez yazıp kullanmak yerine bu işlemi yapıyoruz 
+[Test]
+        [TestCase(2, 1, 2)]
+        [TestCase(1, 2, 2)]
+        [TestCase(1, 1, 1)]
+        public void Max_WhenCalled_ReturnTheGreaterArgument(int a, int b, int expectedResult)
+        {
+            // Act
+            var result = _math.Max(a,b);
+            // Assert
+            Assert.That(result, Is.EqualTo(expectedResult));
+            }
+üç farklı test yazmak yerine tek test içersinde toparlıyoruz
+
+
+ignore test
+silmek yada yorum haline getirmek yerine bu methodu kullanıyoruz
+[Test]
+[Ignoring("açıklama")]
+
+
+
+
+
+
+
