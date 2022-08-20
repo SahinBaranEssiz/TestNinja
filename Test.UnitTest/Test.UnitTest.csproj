@@ -71,6 +71,7 @@
     <Compile Include="reservationTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MatsTest.cs" />
+    <Compile Include="StackTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />
