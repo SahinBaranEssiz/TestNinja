@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 
-namespace TestNinja.Mocking.mockingTestInterface
+
+namespace TestNinja.Mocking
 {
     public interface IFileReader
     {
@@ -17,7 +13,6 @@ namespace TestNinja.Mocking.mockingTestInterface
         public string Read(string path)
         {
             return File.ReadAllText(path);
-
         }
     }
 }
