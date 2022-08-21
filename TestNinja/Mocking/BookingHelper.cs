@@ -12,7 +12,7 @@ namespace TestNinja.Mocking
                 return string.Empty;
 
             
-            var bookings = repository.GetActiveBookings();
+            var bookings = repository.GetActiveBookings(booking.Id);
             var overlappingBooking =
                 bookings.FirstOrDefault(
                     b =>
