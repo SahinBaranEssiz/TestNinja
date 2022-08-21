@@ -56,7 +56,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fundamentals\CustomerController.cs" />
-    <Compile Include="Fundamentals\DateHelper.cs" />
     <Compile Include="Fundamentals\DemeritPointsCalculator.cs" />
     <Compile Include="Fundamentals\ErrorLogger.cs" />
     <Compile Include="Fundamentals\FizzBuzz.cs" />
@@ -66,6 +65,8 @@
     <Compile Include="Fundamentals\Stack.cs" />
     <Compile Include="Mocking\BookingHelper.cs" />
     <Compile Include="Mocking\EmployeeController.cs" />
+    <Compile Include="Mocking\EmployeeStorage.cs" />
+    <Compile Include="Mocking\FileDownloader.cs" />
     <Compile Include="Mocking\InstallerHelper.cs" />
     <Compile Include="Mocking\FileReader.cs" />
     <Compile Include="Mocking\program.cs" />
