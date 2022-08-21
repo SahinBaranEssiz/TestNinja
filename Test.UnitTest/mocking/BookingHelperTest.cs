@@ -5,7 +5,7 @@ using Moq;
 using NUnit.Framework;
 using TestNinja.Mocking;
 
-namespace TestNinja.UnitTests.Mocking
+namespace Test.UnitTest.mocking
 {
     [TestFixture]
     public class BookingHelper_OverlappingBookingsExistTests
